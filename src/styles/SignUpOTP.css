@@ -1,0 +1,199 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.otp{
+
+}
+
+.back-button
+{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #0047ab;
+  z-index: 2;
+}
+
+.back-btn:hover 
+{
+  color: white;
+  background-color: #5984db;
+}
+
+.text-sections{
+
+}
+
+.text-section{
+
+}
+
+.text-des{
+
+}
+
+.otp-inputs{
+
+}
+
+.input-below-text{
+
+}
+
+.resend-link{
+
+}
+
+.continue-butn{
+
+}
+
+.background-symbol
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 900px;
+  height: 900px;
+  background: url("/images/TRYGVE-LOGO.png") no-repeat center center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
+  z-index: 0;
+  pointer-events: none;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.otp {
+  position: relative;
+  padding: 40px 20px;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f4f8ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Back button */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #0047ab;
+  z-index: 2;
+}
+
+.back-button:hover {
+  color: white;
+  background-color: #5984db;
+}
+
+/* Text section */
+.text-sections {
+  margin-top: -500px;
+}
+
+.text-head {
+  font-size: 40px;
+  font-weight: bold;
+  color: #0047ab;
+  margin-bottom: 8px;
+}
+
+.text-des {
+  font-size: 14px;
+  color: black;
+  font-family: 'Audiowide',cursive;
+  max-width: 400px;
+  margin-bottom: 80px;
+}
+
+/* OTP inputs */
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.otp-input {
+  width: 45px;
+  height: 55px;
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid #0047ab;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+
+.otp-input:focus {
+  border-color: #3366cc;
+  box-shadow: 0 0 5px rgba(51, 102, 204, 0.3);
+}
+
+/* Resend text */
+.input-below-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  font-family:'AudioWide',sans-serif;
+}
+
+.resend-link {
+  color: #0047ab;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Continue button */
+/* .contin-ue {
+  margin-bottom: 30px;
+} */
+
+.continue-butn {
+  padding: 12px 36px;
+  font-size: 16px;
+  position: absolute;
+  top:75%;
+  background-color: #0047ab;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.continue-butn:hover {
+  background-color: #3366cc;
+}
+
+/* Watermark symbol */
+.background-symbol {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 900px;
+  height: 900px;
+  background: url("/images/TRYGVE-LOGO.png") no-repeat center center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
