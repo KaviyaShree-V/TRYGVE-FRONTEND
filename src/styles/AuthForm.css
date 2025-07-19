@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&display=swap');
+
+/* Base wrapper */
+.auth-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: transparent;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+/* Card container */
+.auth-card {
+  padding: 40px 32px;
+  border-radius: 20px;
+  box-shadow: none;
+  z-index: 1;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #0047ab;
+  z-index: 2;
+}
+.back-btn:hover {
+  color: white;
+  background-color: #5984db;
+}
+
+/* Welcome text */
+.welcome-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #000000;
+  font-family: 'Orbitron', sans-serif;
+  /* margin-top: 0; */
+  margin-bottom: 12%;
+}
+
+/* Logo title text */
+.logo-textt {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 6rem;
+  font-weight: 600;
+  color: #2367bb;
+  margin-bottom: 12rem;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+/* Button shared styles */
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Primary button (Sign up) */
+.btn.primary {
+  background-color: #0039a6;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  /* padding: 12px 0; */
+}
+
+.btn.primary:hover {
+  background-color: #386dcf;
+}
+
+/* Secondary button (Log in) */
+.btn.secondary {
+  background-color: transparent;
+  color: #0039a6;
+  border-radius: 20px;
+  border: 2px solid #0039a6;
+}
+
+.btn.secondary:hover {
+  background-color: #1c68dafb;
+  color: white;
+  border: #1c68dafb solid 2px;
+}
+
+/* Background logo image */
+.background-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1200px;
+  height: 1200px;
+  background: url("/images/TRYGVE-LOGO.png") no-repeat center center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+  z-index: 2;
+  pointer-events: none;
+}
