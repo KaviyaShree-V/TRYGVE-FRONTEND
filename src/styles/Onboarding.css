@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&display=swap');
 
-/* Fullscreen container with background */
 .onboarding-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
-  position: relative;
+  background-repeat: no-repeat; 
   font-family:'Orbitron',cursive;
+  overflow: hidden; 
 }
 
-/* Blue overlay over background */
 .onboarding-overlay {
   background-color: rgba(0, 71, 171, 0.6);
   width: 100%;
@@ -18,21 +20,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; 
 }
 
-/* Centered content */
 .onboarding-content {
-  text-align:center;
-  top: 25%;
-  position: absolute;
+  text-align: center;
+  position: relative; 
   color: white;
   max-width: 90%;
   margin: auto;
+  z-index: 2; 
 }
 
-/* Logo styles */
+
 .logo-text {
-  font-size: 48px;
+  font-size: clamp(36px, 8vw, 48px);
   font-family:'Orbitron', sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
@@ -41,31 +43,26 @@
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: clamp(16px, 4vw, 18px);
   font-weight: 300;
 }
 
-/* Headline & subtitle for normal slides */
 .onboarding-content h1 {
-  font-size: 70px;
+  font-size: clamp(40px, 12vw, 70px);
   font-family:'Orbitron', sans-serif;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .onboarding-content p {
-  font-size: 16px;
-  /* margin-bottom: 20px; */
+  font-size: clamp(14px, 3vw, 16px);
   text-align: center;
-  top: 60%;
   font-family:'Orbitron', sans-serif;
-  position: relative;
   color: white;
   max-width: 100%;
-  margin: auto;
+  margin: 20px auto;
 }
 
-/* Dot indicators */
 .dots {
   display: flex;
   justify-content: center;
@@ -86,7 +83,6 @@
   background-color: white;
 }
 
-/* Navigation button wrapper at bottom */
 .nav-button-wrapper {
   position: absolute;
   bottom: 30px;
@@ -98,7 +94,6 @@
   box-sizing: border-box;
 }
 
-/* Button containers */
 .nav-btn-left,
 .nav-btn-center,
 .nav-btn-right {
@@ -132,7 +127,6 @@
   padding-bottom: 10%;
 }
 
-/* Common button style */
 .nav-btn {
   background: rgba(255, 255, 255, 0.2);
   border: none;
@@ -149,12 +143,11 @@
   background: rgb(10, 177, 228)
 }
 
-/* Next button hover glow */
 .next-btn:hover {
   box-shadow: 0 0 10px #ffffffb0;
 }
 
-/* Final "Get Started" button */
+
 .get-started-btn {
  background-color: white;
   color: #0047ab;
@@ -166,7 +159,7 @@
   position: relative;
   cursor: pointer;
   transition: background 0.3s ease;
-  margin: 32px auto 0 auto; /* Add margin for spacing and center */
+  margin: 32px auto 0 auto; 
   display: block;
 }
 
